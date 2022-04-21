@@ -1,0 +1,13 @@
+< 설명 >
+문자열이 입력되면 해당 문자열이 팰린드롬이면 "YES", 아니면 “NO"를 출력하는 프로그램을 작성하세요.
+단 회문을 검사할 때 알파벳만 가지고 회문을 검사하며, 대소문자를 구분하지 않습니다.
+
+function solution(s) {
+    let answer = 'YES';
+    s = s.toLowerCase().replace(/[^a-z]/g, '');               // a-z에 해당하지 않는 ('^') 문자는 모두 ''으로 치환
+    if (s.split('').reverse().join('') !== s) return 'NO';    // g를 통해 모든 문자열에 대해 적용시킴
+    return answer;
+}
+
+let str = 'found7, time: study; Yduts; emit, 7Dnuof';
+console.log(solution(str));
