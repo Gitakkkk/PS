@@ -2,24 +2,24 @@
 N개의 자연수가 입력되면 각 자연수의 자릿수의 합을 구하고, 그 합이 최대인 자연수를 출력하는 프로그램을 작성하세요. 
 자릿수의 합이 같은 경우 원래 숫자가 큰 숫자를 답으로 합니다.
 
-function solution(n, arr){
-                let answer, max=Number.MIN_SAFE_INTEGER;
-                for(let x of arr){
-                    let sum=0, tmp=x;
-                    while(tmp){
-                        sum+=(tmp%10);
-                        tmp=Math.floor(tmp/10);
-                    }
-                    if(sum>max){
-                        max=sum;
-                        answer=x;
-                    }
-                    else if(sum===max){
-                        if(x>answer) answer=x;
-                    }
-                }
-                return answer;
-            }
-            
-            let arr=[128, 460, 603, 40, 521, 137, 123];
-            console.log(solution(7, arr));
+function solution(n, arr) {
+    let answer,
+        max = 0;
+    for (let i = 0; i < arr.length; i++) {
+        let sum = arr[i]
+            .toString()
+            .split('')
+            .reduce((a, b) => a + Number(b), 0);      // 반복해서 더하는 경우 초기값 0으로 재설정 꼭 해주기!
+        if (sum > max) {                              // 꼭꼭 해주기!
+            max = sum;
+            answer = arr[i];
+        } else if (sum === max) {
+            if (arr[i] > answer) answer = arr[i];
+        }
+    }
+    return answer;
+}
+
+let arr = [128, 460, 603, 40, 521, 137, 123];
+console.log(solution(7, arr));
+
