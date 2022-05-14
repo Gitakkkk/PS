@@ -13,7 +13,7 @@ function solution(arr) {
     for (let x of arr) {
         let res = 0;
         while (x) {
-            let t = x % 10;
+            let t = x % 10;                                 // 일의 자리부터 잘라내 수를 뒤집음 ( line 16 ~ 18 )
             res = res * 10 + t;
             x = parseInt(x / 10);
         }
