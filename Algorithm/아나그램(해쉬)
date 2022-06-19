@@ -12,3 +12,6 @@ function solution(str1, str2) {
 let a = 'abaCC';
 let b = 'Caaab';
 console.log(solution(a, b));
+
+// .join('') 없이 단순 배열만 비교할 경우 다르게 나옴
+// JSON.stringify(arr), includes(arr) 등을 통하여 비교 가능
