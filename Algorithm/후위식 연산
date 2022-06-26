@@ -1,0 +1,27 @@
+< 문제 >
+후위연산식이 주어지면 연산한 결과를 출력하는 프로그램을 작성하세요.
+
+function solution(s) {
+    let arr = [];
+
+    for (let x of s) {
+        if (!isNaN(x)) arr.push(Number(x));
+        else {
+            const num1 = arr.pop();
+            const num2 = arr.pop();
+            if (x === '+') {
+                arr.push(num2 + num1);
+            } else if (x === '-') {
+                arr.push(num2 - num1);
+            } else if (x === '*') {
+                arr.push(num2 * num1);
+            } else if (x === '/') {
+                arr.push(num2 / num1);
+            }
+        }
+    }
+    return arr.pop();
+}
+
+let str = '352+*9-';
+console.log(solution(str));
