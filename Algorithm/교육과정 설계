@@ -1,0 +1,22 @@
+< 문제 >
+순서대로 수업계획 짜야됨.
+
+function solution(need, plan) {
+    let queue = plan.split('');
+    let idx = 0;
+    let answer = '';
+
+    while (queue.length) {
+        let shifted = queue.shift();
+        if (shifted === need[idx]) {
+            answer += shifted;
+            if (answer === need) return 'YES';
+            idx++;
+        }
+    }
+    return 'NO';
+}
+
+let a = 'CBA';
+let b = 'CBDAGE';
+console.log(solution(a, b));
