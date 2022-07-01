@@ -1,0 +1,9 @@
+< 설명 >
+N개의 숫자가 입력되면 오름차순으로 정렬하여 출력하는 프로그램을 작성하세요
+
+function solution(arr) {
+    return arr.sort((a, b) => a - b);
+}
+
+let arr = [13, 5, 11, 7, 23, 15];
+console.log(solution(arr));
