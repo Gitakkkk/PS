@@ -1,14 +1,14 @@
 <h4>Procedure</h4>
 
-- [x] Lv1
-- [x] 그리디 30문제
-- [ ] DFS/BFS 30문제
-- [ ] Lv2
-- [ ] 동적 프로그래밍(기초) 30문제
-- [ ] 그리디 20문제
-- [ ] DFS/BFS 20문제
-- [ ] 동적 프로그래밍(기초) 20문제
-- [ ] Lv3
+- [x] 프로그래머스 Lv1
+- [x] LeetCode 그리디 30문제
+- [ ] LeetCode DFS/BFS 30문제
+- [ ] 프로그래머스 Lv2
+- [ ] LeetCode 동적 프로그래밍(기초) 30문제
+- [ ] LeetCode 그리디 20문제
+- [ ] LeetCode DFS/BFS 20문제
+- [ ] LeetCode 동적 프로그래밍(기초) 20문제
+- [ ] 프로그래머스 Lv3
 
 <h3>Arrays:</h3>
 
