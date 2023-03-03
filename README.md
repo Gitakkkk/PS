@@ -3,5 +3,5 @@
 - [x] 프로그래머스 Lv1
 - [x] LeetCode Greedy 30문제
 - [x] LeetCode DFS/BFS 30문제
-- [ ] LeetCode Top Inerview Question
+- [ ] LeetCode Top Interview Questions
 - [ ] LeetCode Top 100 Liked Questions
