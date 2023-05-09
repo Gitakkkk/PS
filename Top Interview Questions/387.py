@@ -14,4 +14,3 @@ class Solution:
                 for idx_key, idx_value in idx_dic.items():
                     if ele_key == idx_key: return idx_value
         return -1
-        
